@@ -63,4 +63,9 @@ public class S3Controller {
     public List<String> listFiles() {
         return s3Service.listFiles();
     }
+
+    @GetMapping("/demo")
+    public String getrDemo(){
+        return "Working fine";
+    }
 }
